@@ -1,20 +1,27 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const cors = require('cors');
-const morgan = require('morgan');
-
+const express = require("express");
+const bodyParser = require("body-parser");
+const path = require("path");
+const dotEnv = require("dotenv");
+const Knex = require("knex");
+const { Model } = require("objection");
+var morgan = require("morgan");
+dotEnv.config();
 const app = express();
-app.use(morgan('combined'));
+
+/**
+ * Set up objection.
+ */
+const knexFile = require("./knexfile");
+const knex = Knex(knexFile[process.env.NODE_ENV]);
+Model.knex(knex);
+
 app.use(bodyParser.json());
-app.use(cors());
+app.use(morgan("combined"));
 
-app.get('/posts', (req, res) => {
-    res.send(
-      [{
-        title: "Hello World!",
-        description: "Hi there! How are you?"
-      }]
-    )
-  });
+app.use("/api/users", require("./routes/users"));
 
-app.listen(process.env.PORT || 8081)
+// app.get("/*", (req, res) => {
+//   res.sendFile(path.join(__dirname, "index.html"));
+// });
+
+module.exports = app;
