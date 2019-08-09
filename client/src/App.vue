@@ -1,14 +1,12 @@
 <template>
   <div>
     <navbar></navbar>
-    <div v-if="loading">Loading...</div>
-    <div v-if="!loading && !error" class="alert alert-info">Welcome to Bijaya</div>
-    <div v-if="!loading && error" class="text-center alert alert-warning">Something went wrong.</div>
+    <router-view/>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
-import Navbar from "./layout/Navbar.vue";
+import Navbar from "./components/Navbar.vue";
 import { mapActions } from "vuex";
 export default {
   name: "app",
