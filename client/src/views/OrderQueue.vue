@@ -1,3 +1,3 @@
 <template>
-    <h1>Order</h1>
+    <h1>OrderQueue</h1>
 </template>

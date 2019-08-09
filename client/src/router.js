@@ -8,6 +8,7 @@ import EmployeePortal from "@/views/EmployeePortal.vue";
 import EmployeeIndex from "@/views/EmployeeIndex.vue";
 import TableService from "@/views/TableService.vue";
 import TakeOut from "@/views/TakeOut.vue";
+import ManagerPortal from "@/views/ManagerPortal.vue";
 
 Vue.use(Router);
 
@@ -52,8 +53,13 @@ export default new Router({
     },
     {
       path: "/TakeOut",
-      name: "TakeOut",
+      name: "takeout",
       component: TakeOut,
+    },
+    {
+      path: "/ManagerPortal",
+      name: "managerportal",
+      component: ManagerPortal,
     }
   ]
 });
