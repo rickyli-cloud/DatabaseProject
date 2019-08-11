@@ -1,12 +1,12 @@
 <template>
   <div>
-    <navbar></navbar>
+    <Navbar/>
     <router-view/>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
-import Navbar from "./components/Navbar.vue";
+import Navbar from "@/components/Navbar.vue";
 import { mapActions } from "vuex";
 export default {
   name: "app",
@@ -17,7 +17,7 @@ export default {
     };
   },
   components: {
-    Navbar
+    Navbar,
   },
   methods: {
     ...mapActions(["initialLoad"])
