@@ -2,7 +2,7 @@
   <b-navbar>
     <b-navbar-brand href="#">{{labelMenu}}</b-navbar-brand>
     <b-navbar-nav class="ml-auto" right>
-      <b-nav-item href="#">Edit</b-nav-item>
+      <b-nav-item @click="showShapes">Edit</b-nav-item>
       <b-nav-item href="#">Profile</b-nav-item>
     </b-navbar-nav>
   </b-navbar>
@@ -20,6 +20,11 @@ export default {
     return {
       labelMenu: "",
     };
+  },
+  methods: {
+    showShapes() {
+      console.log("done select");
+    }
   }
 };
 </script>
