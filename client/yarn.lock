@@ -3801,13 +3801,6 @@ fragment-cache@^0.2.1:
   dependencies:
     map-cache "^0.2.2"
 
-free-transform@^0.1.3:
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/free-transform/-/free-transform-0.1.6.tgz#d5eaaebac1f7ad3bf85cc4280d04e6a95f7debd4"
-  integrity sha512-B+UdqjZXmV5TIAGzb9eqqaLTqst5UifsYfB+LwO3MbfJRFWfbaSfA9XbbvcImbmMtVJi6pWql7oeJn/Euhz8tA==
-  dependencies:
-    transformation-matrix "^1.14.0"
-
 fresh@0.5.2:
   version "0.5.2"
   resolved "https://registry.yarnpkg.com/fresh/-/fresh-0.5.2.tgz#3d8cadd90d976569fa835ab1f8e4b23a105605a7"
@@ -8005,11 +7998,6 @@ tough-cookie@~2.4.3:
     psl "^1.1.24"
     punycode "^1.4.1"
 
-transformation-matrix@^1.14.0:
-  version "1.15.3"
-  resolved "https://registry.yarnpkg.com/transformation-matrix/-/transformation-matrix-1.15.3.tgz#f47e42f7fbfe6869f2b662fb1518af08b36f360c"
-  integrity sha512-ThJH58GNFKhCw3gIoOtwf3tNwuYjbyEeiGdeq4mNMYWdJctnI896KUqn6PVt7jmNVepqa1bcKQtnMB1HtjsDMA==
-
 trim-right@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/trim-right/-/trim-right-1.0.1.tgz#cb2e1203067e0c8de1f614094b9fe45704ea6003"
@@ -8315,14 +8303,6 @@ vue-eslint-parser@^5.0.0:
     esquery "^1.0.1"
     lodash "^4.17.11"
 
-vue-free-transform@^1.0.11:
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/vue-free-transform/-/vue-free-transform-1.0.11.tgz#e916be2919f61b66a310c1ec4431bfb2640bac42"
-  integrity sha512-PJwwUuyL+Vh0Ax98TBBvggdONgjHZpaqqe5yYf1uIYJUW9kdmql0iRStqdl1Kl85/YKy45rIIsyAB5KLx3SCHg==
-  dependencies:
-    free-transform "^0.1.3"
-    vue "^2.5.17"
-
 vue-functional-data-merge@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/vue-functional-data-merge/-/vue-functional-data-merge-3.1.0.tgz#08a7797583b7f35680587f8a1d51d729aa1dc657"
@@ -8370,7 +8350,7 @@ vue-template-es2015-compiler@^1.9.0:
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==
 
-vue@^2.5.17, vue@^2.6.6:
+vue@^2.6.6:
   version "2.6.10"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.10.tgz#a72b1a42a4d82a721ea438d1b6bf55e66195c637"
   integrity sha512-ImThpeNU9HbdZL3utgMCq0oiMzAkt1mcgy3/E6zWC/G6AaQoeuFdsl9nDhTDU3X1R6FK7nsIUuRACVcjI+A2GQ==
