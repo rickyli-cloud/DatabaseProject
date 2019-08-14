@@ -2,7 +2,10 @@
   <b-navbar>
     <b-navbar-brand href="#">{{labelMenu}}</b-navbar-brand>
     <b-navbar-nav class="ml-auto" right>
-      <b-nav-item @click="showShapes">Edit</b-nav-item>
+      <b-nav-item v-if="editmode">Square</b-nav-item>
+      <b-nav-item v-if="editmode">Rectangle</b-nav-item>
+      <b-nav-item v-if="editmode">Circle</b-nav-item>
+      <b-nav-item @click="showShapes" v-if="!editmode">Edit</b-nav-item>
       <b-nav-item href="#">Profile</b-nav-item>
     </b-navbar-nav>
   </b-navbar>
@@ -19,11 +22,12 @@ export default {
   data() {
     return {
       labelMenu: "",
+      editMode: false
     };
   },
   methods: {
     showShapes() {
-      console.log("done select");
+      this.editMode = true;
     }
   }
 };

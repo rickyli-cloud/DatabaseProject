@@ -14,7 +14,6 @@
               @keyup.ctrl = "scaleEvenly"
             ></vue-draggable-resizable>
           </div>
-          <!-- <canvas id="myCanvas" width="1000" height="800"></canvas> -->
         </b-col>
       </b-row>
     </b-container>
@@ -53,20 +52,6 @@ export default {
       x: 0,
       y: 0
     };
-  },
-  watch: {
-    width: {
-      deep: true,
-      handler() {
-        this.onResize();
-      }
-    },
-    height: {
-      deep: true,
-      handler() {
-        this.onResize();
-      }
-    }
   }
 };
 </script>
